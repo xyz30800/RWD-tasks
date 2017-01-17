@@ -1,0 +1,139 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+html {
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* CSS Reset end */
+
+/* Custom Css */
+.wrap {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* header-top */
+.header-top {
+	background: #000;
+	height: 80px;
+}
+.header-top-content {
+	display: block;
+	width: 900px;
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+}
+
+.logo a {
+	line-height: 80px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #f4aeae;
+	font-size: 35px;
+}
+
+.menu{
+	float: right;
+}
+.menu li{
+	float: left;
+	margin: 0 3px;
+}
+.menu li a{
+	color:#fff;
+	display: block;
+	width: 100px;
+	text-align: center;
+	line-height: 80px;
+	text-decoration: none;
+}
+/* header-top End */
+
+/* header */
+.header{
+	position: relative;
+	height: 500px;
+	background: url(../img/header_desktop@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-state {
+	position: absolute;
+	margin: 0px auto;
+	padding: 10px;
+	top: 120px;
+	left: 0; 
+  	right: 0; 
+	max-width: 500px;
+	height: auto;
+	background: rgba(25, 25, 25, .5);
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+}
+
+.header-state span {
+	margin: 20px 0;
+	display: block;
+}
+.header-state-title {
+	font-size: 40px;
+}
+.header-state-sub {
+	line-height: 25px;
+	font-size: 20px;
+}
+
+@media (max-width: 768px){
+	.header{
+		height: auto;
+		padding-bottom: 1em;
+	}
+}
+
+/* header End */
+
