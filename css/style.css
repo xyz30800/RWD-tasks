@@ -46,6 +46,22 @@ img{
 }
 /* CSS Reset end */
 
+h1 {
+	margin: 20px 0;
+	font-size: 30px;
+}
+
+h2 {
+	margin: 20px 0;
+	font-size: 23px;
+}
+h3 {
+	font-size: 23px;
+}
+p {
+	font-size: 18px;
+}
+
 /* Custom Css */
 .wrap {
 	max-width: 100%;
@@ -140,37 +156,113 @@ img{
 
 /* content */
 .content {
-	background: #e5dfc2;
+	background: #fffef7;
 }
 .content-container {
 	display: block;
 	width: 1080px;
 	margin: 0 auto;
 	text-align: center;
+	color: #4b1400;
 }
-
-.content-reason {
+.content-container > div {
 	padding: 20px;
 }
+/* content-reason */
 .reason-header {
 	line-height: 45px;
 	margin: 30px 15px 50px 15px;
-	font-size: 25px; 
 }
-
 .content-reason .reason {
 	padding: 25px;
 	width: 33%;
 	display: inline-block;
-	border: #4b1400;
 }
 	.reason img {
 		border-radius: 50%;
 		margin-bottom: 15px; 
 	}
-	.reason h1 {
-		margin: 20px 0;
-		font-size: 23px;
-		font-weight: bold;
+	.reason {
+		font-size: 18px;
 	}
-/* content End */
+
+/* content-chef */
+.content-chef {
+	display: flex;
+	background: #4b1400;
+	color: white;
+}
+.content-chef > div {
+	display: inline-block;
+}
+.content-chef .chef-photo {
+	flex: 1;
+	max-width: calc(40% - 20px);
+}
+.content-chef .chef-describe {
+	flex: 1;
+	width: calc(60% - 20px);
+	padding: 10px;
+	display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+}
+/* content-chef End */
+
+/* content-comment */
+.comment-header {
+	margin: 30px 15px;
+}
+.content-comment .comment {
+	display: inline-block;
+	padding: 25px;
+	width: 33%;
+}
+.comment .guest {
+	margin-bottom: 30px
+}
+.comment .guest img {
+	vertical-align: middle;
+	border-radius: 50%;
+	width: 30%;
+}
+.comment .guest .guest-name {
+	margin-left: 20px;
+	font-size: 18px;
+}
+.comment .guest-state {
+	height: 150px;
+	overflow-y: auto;
+	margin-bottom: 30px
+}
+.comment .guest-sign {
+	text-align: right;
+}
+/* content-comment End */
+
+/* content-booking */
+.content-booking {
+	background: #e5e5e5;
+}
+.comment-booking {
+	margin: 30px 15px;
+}
+.booking .booking-map {
+	width: 50%;
+}
+.booking .booking-form {
+	width: 50%;
+}
+/* content-comment End */
+
+/* footer */
+.footer {
+	background: #000;
+	height: 80px;
+}
+.footer-container {
+	display: block;
+	width: 1080px;
+	margin: 0 auto;
+}
+/* footer End */
