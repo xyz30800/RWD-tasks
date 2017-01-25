@@ -94,11 +94,8 @@ input[type='password'] {
     border-radius: 5px;
     font-family: Microsoft JhengHei;
 }
-input[type='radio'] {
-	
-}
 button {
-	width: 80px;
+	width: 70px;
     height: 35px;
     border: none;
     color: white;
@@ -122,7 +119,11 @@ button {
 /* header-top */
 .header-top {
 	background: #000;
-	height: 80px;
+	height: 70px;
+	width: 100%;
+	position: absolute;
+    top: 0;
+    z-index: 1;
 }
 .header-top-container {
 	display: block;
@@ -131,7 +132,7 @@ button {
 }
 .logo {
 	float: left;
-	line-height: 90px;
+	line-height: 70px;
 }
 .menu{
 	float: right;
@@ -143,7 +144,7 @@ button {
 	display: block;
 	width: 100px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 70px;
 	text-decoration: none;
 }
 .menu li:hover{
@@ -151,7 +152,7 @@ button {
 }
 #show-menu-btn {
 	color: white;
-	line-height: 112px;
+	line-height: 92px;
 	display: none;
 }
 #show-menu-btn i {
@@ -163,6 +164,9 @@ button {
 	}
 }
 @media (max-width: 768px){
+	.header-top {
+		position: fixed;
+	}
 	.menu li {
 		width: 50px;
 	}
@@ -180,7 +184,7 @@ button {
 	}
 	.menu li {
 		font-size: 20px;
-		line-height: 50px;
+		line-height: 70px;
 		border-bottom: 1px solid #000;
 		float: none;
 		width: 100%;
@@ -197,6 +201,7 @@ button {
 
 /* header */
 .header {
+	margin-top: 70px;
 	position: relative;
 	height: 500px;
 	background: url(../img/header_desktop@2x.png);
@@ -231,19 +236,27 @@ button {
 	font-size: 20px;
 }
 @media (max-width: 767px){
+	.header {
+		height: 350px;
+	}
 	.header-state {
-		width: 80%;
+		width: 85%;
+		top: 40px;
 	}
 }
-@media (max-width: 414px){
+@media (max-width: 568px){
 	.header {
 		background: url(../img/header_mobile@2x.png);
 		background-repeat: no-repeat;
     	background-size: cover;
     	background-position: center;
+    	height: 300px;
 	}
 	.header-state-title {
 		display: none;
+	}
+	.header-state {
+		top: 60px;
 	}
 }
 /* header End */
@@ -331,14 +344,14 @@ button {
 	width: 33.33333%;
 	float: left;
 }
-	.reason img {
-		width: 80%;
-		border-radius: 50%;
-		margin-bottom: 15px; 
-	}
-	.reason {
-		font-size: 18px;
-	}
+.reason img {
+	width: 80%;
+	border-radius: 50%;
+	margin-bottom: 15px; 
+}
+.reason {
+	font-size: 18px;
+}
 
 @media (max-width: 767px){
 	.content-reason .reason {
@@ -414,7 +427,6 @@ button {
 }
 .comment .guest {
 	margin-bottom: 30px;
-
 }
 .comment .guest img {
 	vertical-align: middle;
@@ -445,6 +457,9 @@ button {
 		width: 80%;
 		margin: 0 auto 30px auto;
 	}
+	.comment .guest-state {
+		padding: 10px 30px;
+	}
 }
 @media (max-width: 414px){
 	.content-comment .comment > div {
@@ -466,8 +481,6 @@ button {
 .booking > li {
 	float: left;
 	width: 50%;
-}
-.booking .booking-map {
 }
 .booking .booking-form {
 	position: relative;
@@ -505,7 +518,6 @@ button {
 /* index.html End */
 
 /* feature.html */
-
 .feature-goods,
 .feature-sale {
 	float: left;
@@ -519,6 +531,9 @@ button {
 	width: 80%;
 	margin: 20px 0;
 	padding: 0 20px;
+}
+.feature-goods h2 {
+	line-height: 30px;
 }
 .feature-goods .goods-list > li {
 	font-size: 18px;
@@ -570,52 +585,136 @@ button {
 	text-align: right;
 }
 .sale-list li {
+	position: relative;
 	border: 1px solid #ddd;
 	float: left;
 	width: 32.3333%;
 	margin: 15px 0.5%;
 	box-shadow: 5px 5px 10px #888888;
 	transition-duration: 0.3s;
-	height: 340px;
+	height: 330px;
 }
 .sale-list li:hover {
 	-webkit-transform: translateY(-8px);
     transform: translateY(-8px);
 }
-.sale-info {
-	position: relative;
-	height: 320px;
-}
-.sale-info .divide-line {
+.sale-list li .divide-line {
 	width: 60%;
     border-bottom: 1px solid #000;
     margin: 10px auto;
 }
-/*.sale-info .sale-money {
-	position: absolute;
-    bottom: 30px;
-}*/
-.sale-info .money-style {
+.sale-list li .money-style {
 	font-weight: bold;
 	font-family: monospace;
 }
-.sale-info p {
+.sale-list li p {
 	font-size: 16px;
 }
-.sale-info button {
+.sale-list li button {
 	width: 90%;
 	background: inherit;
 	color: #ff6500;
 	border: 2px solid #ff6500;
-/*	position: absolute;
-    left: 0;
-    bottom: 0;*/
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    bottom: -10px;
 }
-.sale-info button:hover {
+.sale-list li button:hover {
 	background: #ff6500;
 	color: white;
 }
+.sale-list li .sale-like {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: white;
+}
+.sale-list li .sale-like i {
+	font-size: 26px;
+}
+.sale-list li .hot-ribbon {
+	position: absolute;
+	right: -5px; top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 75px; height: 75px;
+	text-align: right;
+}
+.sale-list li .hot-ribbon span {
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 20px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 100px;
+	display: block;
+	background: #79A70A;
+	background: linear-gradient(#0CF7A1 0%, #0CF7A1 100%);
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 19px; right: -21px;
+}
+.sale-list li .hot-ribbon span::before {
+	content: "";
+	position: absolute; left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid #0CF7A1;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #0CF7A1;
+}
+.sale-list li .hot-ribbon span::after {
+	content: "";
+	position: absolute; right: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid transparent;
+	border-right: 3px solid #0CF7A1;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #0CF7A1;
+}
+
 @media (max-width: 767px){
+	.sale-list li {
+		width: 49%;
+	}
+}
+@media (max-width: 667px) {
+	.feature-goods {
+		width: 35%;
+	}
+	.feature-sale {
+		width: 65%;
+	}
+	.sale-list li {
+		padding: 10px;
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	.sale-option {
+		overflow: auto;
+	}
+	.sale-option .sale-cart,
+	.sale-option .sale-search {
+		display: inline-block;
+		width: 100%;
+		float: none;
+	}
+	.sale-list li .sale-like {
+	    top: 15px;
+	    left: 15px;
+	}
+	.sale-list li button {
+	    -webkit-transform: none;
+	    transform: none;
+	    position: initial;
+	}
+}
+@media (max-width: 567px){
 	.feature-goods,
 	.feature-sale {
 		float: none;
@@ -628,78 +727,6 @@ button {
 	.feature-goods {
 		margin-bottom: 35px;
 	}
-}
-@media (max-width: 667px){
-	.sale-list li {
-		padding: 10px;
-		float: none;
-		width: 100%;
-		height: auto;
-	}
-	.sale-info {
-		height: auto;
-	}
-	.sale-option {
-		overflow: auto;
-	}
-	.sale-option .sale-cart,
-	.sale-option .sale-search {
-		display: inline-block;
-		width: 100%;
-		float: none;
-	}
-}
-.sale-info .sale-like {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	color: white;
-}
-.sale-info .sale-like i {
-	font-size: 26px;
-}
-.sale-info .hot-ribbon {
-  position: absolute;
-  right: -5px; top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 75px; height: 75px;
-  text-align: right;
-}
-.sale-info .hot-ribbon span {
-  font-size: 14px;
-  font-weight: bold;
-  color: red;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #79A70A;
-  background: linear-gradient(#0CF7A1 0%, #0CF7A1 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px; right: -21px;
-}
-.sale-info .hot-ribbon span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid #0CF7A1;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #0CF7A1;
-}
-.sale-info .hot-ribbon span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #0CF7A1;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #0CF7A1;
 }
 /* feature.html End */
 
@@ -761,8 +788,5 @@ button {
 		padding: 20px;
 		margin-bottom: 25px;
 	}
-}
-@media (max-width: 414px){
-
 }
 /* logon.html End */
