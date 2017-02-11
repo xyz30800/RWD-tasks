@@ -1,5 +1,11 @@
-.wrap {
-	max-width: 100%;
-	margin: 0 auto;
-	font-family: Microsoft JhengHei;
-}
+/* import */
+@import 'variable';
+@import 'reset';
+@import 'breakpoint';
+@import 'vender';
+@import 'layout';
+
+@import 'pages/index';
+@import 'pages/feature';
+@import 'pages/login';
+/* import End */

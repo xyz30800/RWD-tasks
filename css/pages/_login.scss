@@ -1,0 +1,57 @@
+/* logon.html */
+.logon-div {
+	width: 70%;
+	margin: 40px auto;
+	border: 1px solid #ddd;
+	border-top: 6px solid #f24815;
+	box-shadow: 5px 5px 10px #888888;
+	overflow: auto;
+	> div {
+		float: left;
+		padding: 0 15px;
+		text-align: left;
+		width: calc(50% - 2px);
+		@include big-phone {
+			float: none;
+			width: 100%;
+		}
+	}
+}
+.logon-rule {
+	h3 {
+		font-weight: bold;
+	}
+	@include big-phone {
+		padding: 20px;
+		margin-bottom: 25px;
+	}
+}
+.logon-form {
+	position: relative;
+	padding: 10px 20px;
+	text-align: left;
+	height: 280px;
+	.form-input {
+		margin-bottom: 10px;
+	}
+	.form-button {
+		position: absolute;
+		bottom: 8px;
+	    right: 16px;
+		text-align: right;
+	}
+	a {
+	    font-size: 14px;
+	    color: #cb733f;
+	}
+	input[type='email']{
+		background: url(../img/mail.png) no-repeat scroll 7px 7px;
+	}
+	input[type='password']{
+		background: url(../img/locked.png) no-repeat scroll 7px 7px;
+	}
+	input:focus{
+		background: none;
+	}
+}
+/* logon.html End */

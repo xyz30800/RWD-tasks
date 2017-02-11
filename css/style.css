@@ -163,7 +163,7 @@ button {
 		width: 95%;
 	}
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.header-top {
 		position: fixed;
 	}
@@ -342,7 +342,7 @@ button {
 	width: 33.33333%;
 	float: left;
 }
-.reason li img {
+.reason img {
 	width: 80%;
 	border-radius: 50%;
 	margin-bottom: 50px; 
@@ -372,7 +372,7 @@ button {
 .content-chef > div {
 	float: left;
 }
-.content-chef .chef-photo {
+.chef-photo {
 	background: url(../img/main_chef_brown@2x.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -380,7 +380,7 @@ button {
 	width: 40%;
 	height: 510px;
 }
-.content-chef .chef-describe {
+.chef-describe {
 	padding: 20px;
 	width: 60%;
     text-align: left;
@@ -389,11 +389,11 @@ button {
 	.content-chef > div {
 		float: none;
 	}
-	.content-chef .chef-photo,
-	.content-chef .chef-describe {
+	.chef-photo,
+	.chef-describe {
 		width: 100%;
 	}
-	.content-chef .chef-photo {
+	.chef-photo {
 		background: url(../img/main_chef_brown.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -401,7 +401,7 @@ button {
 	}
 }
 @media (max-width: 414px){
-	.content-chef .chef-photo {
+	.chef-photo {
 		height: 300px;
 	}
 }
@@ -489,7 +489,7 @@ button {
 .booking-form .form-input {
 	margin-bottom: 10px;
 }
-.booking-form .form-input span {
+.booking-form .input-radio {
 	margin-right: 20px;
 }
 .booking-form .form-button {
@@ -509,8 +509,6 @@ button {
 	.booking .booking-form {
 		margin-top: 20px;
 	}
-}
-@media (max-width: 414px){
 }
 /* content-comment End */
 /* index.html End */
@@ -534,13 +532,13 @@ button {
 .feature-goods h2 {
 	line-height: 30px;
 }
-.feature-goods .goods-list > li {
+.goods-list > li {
 	font-size: 18px;
 	padding: 15px 5px 15px 5px;
 	border-bottom: 1px solid #000;
 	line-height: 25px;
 }
-.feature-goods .goods-list > li:hover {
+.goods-list > li:hover {
 	color: white;
 	background: #4b1400;
 }
@@ -551,17 +549,17 @@ button {
 	overflow: auto;
 	line-height: 35px;
 }
-.sale-option .sale-search {
+.sale-search {
 	width: 70%;
 	float: left;
 }
-.sale-option .sale-search input {
+.sale-search input {
 	border: 1px solid #4b1400;
     border-radius: 0;
 	width: 75%;
 	float: left;
 }
-.sale-option .sale-search button {
+.sale-search button {
 	border: 1px solid #4b1400;
     border-radius: 0;
     background: #4b1400;
@@ -572,10 +570,10 @@ button {
 	float: left;
 	text-align: center;
 }
-.sale-option .sale-search input:focus {
+.sale-search input:focus {
 	background: #e5f2f4;
 }
-.sale-option .sale-cart {
+.sale-cart {
 	width: 30%;
 	height: inherit;
 	line-height: inherit;
@@ -599,12 +597,12 @@ button {
     transform: translateY(-8px);
     cursor: pointer;
 }
-.sale-list li .divide-line {
+.divide-line {
 	width: 60%;
     border-bottom: 1px solid #000;
     margin: 10px auto;
 }
-.sale-list li .money-style {
+.money-style {
 	font-weight: bold;
 	font-family: monospace;
 }

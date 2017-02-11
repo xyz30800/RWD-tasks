@@ -1,0 +1,166 @@
+/* index.html */
+/* content-reason */
+.content-reason {
+	width: 100%;
+	padding-bottom: 20px;
+	overflow: auto;
+}
+.reason-header {
+	line-height: 45px;
+	margin: 30px 15px 50px 15px;
+}
+.reason {
+	li {
+		padding: 25px;
+		width: 33.33333%;
+		float: left;
+		@include big-phone {
+			margin: 0 auto;
+			width: 80%;
+			float: none;
+		}
+		@include min-phone {
+			width: 100%;
+		}
+	}
+	img {
+		width: 80%;
+		border-radius: 50%;
+		margin-bottom: 50px;
+		@include big-phone {
+			width: 60%;
+		}
+	}
+}
+/* content-chef */
+.content-chef {
+	background: #4b1400;
+	color: white;
+	overflow: auto;
+}
+.content-chef > div {
+	float: left;
+	@include big-phone {
+		float: none;
+	}
+}
+.chef-photo {
+	background: url(../img/main_chef_brown@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 40%;
+	height: 510px;
+	@include big-phone {
+		width: 100%;
+		background: url(../img/main_chef_brown.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	@include min-phone {
+		height: 300px;
+	}
+}
+.chef-describe {
+	padding: 20px;
+	width: 60%;
+    text-align: left;
+    @include big-phone {
+		width: 100%;
+	}
+}
+/* content-chef End */
+/* content-comment */
+.content-comment {
+	overflow: auto;
+	padding: 30px 0;
+}
+.comment-header {
+	margin: 30px 15px;
+}
+.comment li {
+	float: left;
+	padding: 15px;
+	width: 33.3333%;
+	@include pad {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+	@include min-phone {
+		width: 100%;
+	}
+}
+.comment-guest {
+	margin-bottom: 20px;
+	img {
+		vertical-align: middle;
+		border-radius: 50%;
+		width: 35%;
+	}
+}
+.guest-name {
+	margin-left: 22px;
+	font-size: 23px;
+}
+.comment-state {
+	padding: 5px;
+	margin-left: 40%;
+	@include pad {
+		margin-left: 0;
+		padding: 10px 30px;
+	}
+	@include min-phone {
+		margin-left: 0;
+	}
+}
+.comment-sign {
+	margin-top: 40px;
+	text-align: right;
+}
+.guest-signname {
+	text-align: right;
+}
+/* content-comment End */
+/* content-booking */
+.content-booking {
+	overflow: auto;
+	background: #e5e5e5;
+	padding: 10px;
+}
+.booking-header {
+	line-height: 50px;
+    margin: 25px 0 35px 0;
+}
+.booking li {
+	float: left;
+	width: 50%;
+	@include big-phone {
+		float: none;
+		width: 100%;
+	}
+}
+.booking-form {
+	position: relative;
+	padding: 10px 20px;
+	text-align: left;
+	height: 440px;
+	.form-input {
+		margin-bottom: 10px;
+	}
+	.input-radio {
+		margin-right: 20px;
+	}
+	.form-button {
+		position: absolute;
+		bottom: 8px;
+	    right: 16px;
+		text-align: right;
+	}
+	@include big-phone {
+		margin-top: 20px;
+	}
+}
+/* content-comment End */
+/* index.html End */
