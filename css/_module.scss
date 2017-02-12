@@ -1,0 +1,67 @@
+h1, h2, h3, h5 {
+	font-family: Microsoft JhengHei;
+}
+h1 {
+	font-size: $h30-size;
+}
+h2 {
+	margin: 20px 0;
+	font-size: $h30-size;
+}
+h3 {
+	margin-bottom: 20px;
+	font-size: $h25-size;
+}
+h4 {
+	margin-bottom: 10px;
+	font-size: $h20-size;
+}
+p {
+	font-size: $p-size;
+	line-height: 30px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.iconImage {
+	display: inline;
+}
+i[class^="material"] {
+    margin: 0 5px;
+    font-size: initial;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='number'],
+input[type='password'] {
+	width: 100%;
+    height: 30px;
+    padding: 15px 10px;
+    border: none;
+    border: 1px solid $input-border-color;
+    border-radius: 5px;
+    font-family: Microsoft JhengHei;
+}
+button {
+	width: 70px;
+    height: 35px;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Microsoft JhengHei;
+}
+button:hover {
+	opacity: 0.9;
+}
+input:focus {
+    background-color: $input-focus-color;
+}

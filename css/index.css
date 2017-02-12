@@ -1,4 +1,7 @@
+@charset "UTF-8";
 /* import */
+/* color setting */
+/* font setting */
 /* CSS Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -63,7 +66,7 @@ h4 {
   font-size: 20px; }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px; }
 
 a {
@@ -85,7 +88,6 @@ input[type='password'] {
   width: 100%;
   height: 30px;
   padding: 15px 10px;
-  font-size: 16px;
   border: none;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -100,7 +102,6 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 4px 2px;
   border-radius: 4px;
   cursor: pointer;
@@ -109,56 +110,8 @@ button {
 button:hover {
   opacity: 0.9; }
 
-.hot-ribbon {
-  position: absolute;
-  right: -5px;
-  top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 75px;
-  height: 75px;
-  text-align: right; }
-
-.hot-ribbon span {
-  font-size: 14px;
-  font-weight: bold;
-  color: red;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 100px;
-  display: block;
-  background: #79A70A;
-  background: linear-gradient(#0CF7A1 0%, #0CF7A1 100%);
-  box-shadow: 0 3px 10px -5px black;
-  position: absolute;
-  top: 19px;
-  right: -21px; }
-
-.hot-ribbon span::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid #0CF7A1;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #0CF7A1; }
-
-.hot-ribbon span::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #0CF7A1;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #0CF7A1; }
+input:focus {
+  background-color: #efefef; }
 
 /* wrap */
 .wrap {
@@ -224,7 +177,7 @@ button:hover {
         float: none;
         width: 100%; } }
   .menu li:hover {
-    color: #e8d134; }
+    color: #ddd; }
 
 .menu-btn {
   color: white;
@@ -349,7 +302,7 @@ button:hover {
   padding-left: 25px; }
   .footer-info > ul li {
     margin-bottom: 15px;
-    font-size: 20px; }
+    font-size: 18px; }
 
 .footer-logo,
 .footer-social {
@@ -360,6 +313,58 @@ button:hover {
   border-radius: 10%; }
 
 /* footer End */
+/* 緞帶樣式 */
+.hot-ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right; }
+
+.hot-ribbon span {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#0CF7A1 0%, #0CF7A1 100%);
+  box-shadow: 0 3px 10px -5px black;
+  position: absolute;
+  top: 19px;
+  right: -21px; }
+
+.hot-ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #0CF7A1;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #0CF7A1; }
+
+.hot-ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #0CF7A1;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #0CF7A1; }
+
 /* index.html */
 /* content-reason */
 .content-reason {
@@ -395,7 +400,7 @@ button:hover {
 /* content-chef */
 .content-chef {
   background: #4b1400;
-  color: white;
+  color: #fff;
   overflow: auto; }
 
 .content-chef > div {
@@ -461,7 +466,7 @@ button:hover {
 
 .guest-name {
   margin-left: 22px;
-  font-size: 23px; }
+  font-size: 24px; }
 
 .comment-state {
   padding: 5px;
@@ -569,7 +574,7 @@ button:hover {
     border-bottom: 1px solid #000;
     line-height: 25px; }
   .goods-list li:hover {
-    color: white;
+    color: #fff;
     background: #4b1400; }
 
 .sale-option {
@@ -588,8 +593,6 @@ button:hover {
     border-radius: 0;
     width: 75%;
     float: left; }
-  .sale-search input:focus {
-    background: #e5f2f4; }
   .sale-search button {
     border: 1px solid #4b1400;
     border-radius: 0;
@@ -630,8 +633,6 @@ button:hover {
   height: 330px; }
   .sale-list li h3 {
     margin-top: 20px; }
-  .sale-list li p {
-    font-size: 16px; }
   .sale-list li button {
     width: 90%;
     background: inherit;
@@ -650,12 +651,12 @@ button:hover {
         position: initial; } }
   .sale-list li button:hover {
     background: #ff6500;
-    color: white; }
+    color: #fff; }
   .sale-list li .sale-like {
     position: absolute;
     top: 5px;
     left: 5px;
-    color: white; }
+    color: #fff; }
     @media (max-width: 767px) {
       .sale-list li .sale-like {
         top: 15px;
@@ -692,7 +693,7 @@ button:hover {
   width: 70%;
   margin: 40px auto;
   border: 1px solid #ddd;
-  border-top: 6px solid #f24815;
+  border-top: 6px solid #ff6500;
   box-shadow: 5px 5px 10px #888888;
   overflow: auto; }
   .logon-div > div {
@@ -727,13 +728,17 @@ button:hover {
     text-align: right; }
   .logon-form a {
     font-size: 14px;
-    color: #cb733f; }
+    color: #ff6500; }
   .logon-form input[type='email'] {
-    background: url(../img/mail.png) no-repeat scroll 7px 7px; }
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position: 7px 7px; }
   .logon-form input[type='password'] {
-    background: url(../img/locked.png) no-repeat scroll 7px 7px; }
+    background-image: url(../img/locked.png);
+    background-repeat: no-repeat;
+    background-position: 7px 7px; }
   .logon-form input:focus {
-    background: none; }
+    background-image: none; }
 
 /* logon.html End */
 /* import End */

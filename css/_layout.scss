@@ -7,7 +7,7 @@
 /* wrap End */
 /* header-top */
 .header-top {
-	background: #000;
+	background: $black-color;
 	height: 70px;
 	width: 100%;
 	position: absolute;
@@ -39,30 +39,30 @@
 	    top: 100%;
 	    left: 0;
 	    right: 0;
-	    background: #303030;
+	    background: $menu-color;
 	}
 	li {
 		float: left;
 		margin: 0 3px;
-		color: #fff;
+		color: $white-color;
 		display: block;
 		width: 100px;
 		text-align: center;
 		line-height: 70px;
 		text-decoration: none;
-		@include big-phone() {
+		@include big-phone {
 			width: 50px;
 		}
 		@include min-phone {
-			font-size: 18px;
+			font-size: $li-size;
 			line-height: 50px;
-			border-bottom: 1px solid #000;
+			border-bottom: 1px solid $black-color;
 			float: none;
 			width: 100%;
 		}
 	}
 	li:hover {
-		color: #e8d134;
+		color: $gray-color;
 	}
 }
 .menu-btn {
@@ -113,7 +113,7 @@
 	background: rgba(25, 25, 25, .5);
 	border-radius: 5px;
 	text-align: center;
-	color: #fff;
+	color: $white-color;
 	@include big-phone {
 		width: 85%;
 		top: 40px;
@@ -126,7 +126,7 @@
 	display: block;
 	margin: 20px 0;
 	line-height: 60px;
-	font-size: 40px;
+	font-size: $h40-size;
 	@include mid-phone {
 		display: none;
 	}
@@ -135,12 +135,12 @@
 	display: block;
 	margin: 15px 0;
 	line-height: 40px;
-	font-size: 20px;
+	font-size: $h20-size;
 }
 /* header End */
 /* content */
 .content {
-	background: #fffef7;
+	background: $main-light-color;
 }
 .content-container {
 	display: block;
@@ -148,7 +148,7 @@
 	margin: 0 auto;
 	padding: 30px 0;
 	text-align: center;
-	color: #4b1400;
+	color: $main-deep-color;
 	overflow: auto;
 	@include min-desktop {
 		width: 100%;
@@ -156,8 +156,8 @@
 }
 /* footer */
 .footer {
-	background: #dcdcdc;
-	color: #4b1400;
+	background: $footer-color;
+	color: $main-deep-color;
 	overflow: auto;
 }
 .footer-container {
@@ -191,7 +191,7 @@
 		padding-left: 25px;
 		li {
 			margin-bottom: 15px;
-		    font-size: 20px;
+		    font-size: $li-size;
 		}
 	}
 }

@@ -34,8 +34,8 @@
 }
 /* content-chef */
 .content-chef {
-	background: #4b1400;
-	color: white;
+	background: $main-deep-color;
+	color: $white-color;
 	overflow: auto;
 }
 .content-chef > div {
@@ -102,7 +102,7 @@
 }
 .guest-name {
 	margin-left: 22px;
-	font-size: 23px;
+	font-size: 24px;
 }
 .comment-state {
 	padding: 5px;
@@ -126,7 +126,7 @@
 /* content-booking */
 .content-booking {
 	overflow: auto;
-	background: #e5e5e5;
+	background: $booking-color;
 	padding: 10px;
 }
 .booking-header {

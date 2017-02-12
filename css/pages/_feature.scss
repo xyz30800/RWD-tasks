@@ -43,14 +43,14 @@
 .goods-list {
 	margin-bottom: 10px;
 	li {
-		font-size: 18px;
+		font-size: $li-size;
 		padding: 15px 5px 15px 5px;
-		border-bottom: 1px solid #000;
+		border-bottom: 1px solid $black-color;
 		line-height: 25px;
 	}
 	li:hover {
-		color: white;
-		background: #4b1400;
+		color: $white-color;
+		background: $main-deep-color;
 	}
 }
 .sale-option {
@@ -65,18 +65,15 @@
 	width: 70%;
 	float: left;
 	input {
-		border: 1px solid #4b1400;
+		border: 1px solid $main-deep-color;
 	    border-radius: 0;
 		width: 75%;
 		float: left;	
 	}
-	input:focus {
-		background: #e5f2f4;
-	}
 	button {
-		border: 1px solid #4b1400;
+		border: 1px solid $main-deep-color;
 	    border-radius: 0;
-	    background: #4b1400;
+	    background: $main-deep-color;
 		width: 15%;
 		min-width: 60px;
 		height: 32px;
@@ -95,7 +92,7 @@
 	height: inherit;
 	line-height: inherit;
 	float: right;
-	font-size: 20px;
+	font-size: $h20-size;
 	text-align: right;
 	@include big-phone {
 		display: inline-block;
@@ -106,24 +103,21 @@
 .sale-list {
 	li {
 		position: relative;
-		border: 1px solid #ddd;
+		border: 1px solid $gray-color;
 		float: left;
 		width: 32.3333%;
 		margin: 15px 0.5%;
-		box-shadow: 5px 5px 10px #888888;
+		box-shadow: 5px 5px 10px $shadow-color;
 		transition-duration: 0.3s;
 		height: 330px;
 		h3 {
 			margin-top: 20px;
 		}
-		p {
-			font-size: 16px;
-		}
 		button {
 			width: 90%;
 			background: inherit;
-			color: #ff6500;
-			border: 2px solid #ff6500;
+			color: $orange-color;
+			border: 2px solid $orange-color;
 		    -webkit-transform: translate(-50%,-50%);
 		    transform: translate(-50%,-50%);
 		    position: absolute;
@@ -135,14 +129,14 @@
 			}
 		}
 		button:hover {
-			background: #ff6500;
-			color: white;
+			background: $orange-color;
+			color: $white-color;
 		}
 		.sale-like {
 			position: absolute;
 			top: 5px;
 			left: 5px;
-			color: white;
+			color: $white-color;
 			@include big-phone {
 				top: 15px;
 	    		left: 15px;
@@ -153,7 +147,7 @@
 		}
 		.divide-line {
 			width: 60%;
-		    border-bottom: 1px solid #000;
+		    border-bottom: 1px solid $black-color;
 		    margin: 10px auto;
 		}
 		.money-style {

@@ -2,9 +2,9 @@
 .logon-div {
 	width: 70%;
 	margin: 40px auto;
-	border: 1px solid #ddd;
-	border-top: 6px solid #f24815;
-	box-shadow: 5px 5px 10px #888888;
+	border: 1px solid $gray-color;
+	border-top: 6px solid $orange-color;
+	box-shadow: 5px 5px 10px $shadow-color;
 	overflow: auto;
 	> div {
 		float: left;
@@ -41,17 +41,21 @@
 		text-align: right;
 	}
 	a {
-	    font-size: 14px;
-	    color: #cb733f;
+	    font-size: ($p-size - 2px);
+	    color: $orange-color;
 	}
 	input[type='email']{
-		background: url(../img/mail.png) no-repeat scroll 7px 7px;
+		background-image: url(../img/mail.png);
+		background-repeat: no-repeat;
+		background-position: 7px 7px;
 	}
 	input[type='password']{
-		background: url(../img/locked.png) no-repeat scroll 7px 7px;
+		background-image: url(../img/locked.png);
+		background-repeat: no-repeat;
+		background-position: 7px 7px;
 	}
 	input:focus{
-		background: none;
+		background-image: none;
 	}
 }
 /* logon.html End */
