@@ -69,10 +69,16 @@
 	color: white;
 	line-height: 92px;
 	display: none;
-	i { font-size: 40px; }
+	i { 
+		transition-duration: 0.8s;
+		font-size: 40px; 
+	}
 	@include min-phone {
 		display: block;
     	float: right;
+	}
+	i:hover {
+		transform: rotate(360deg);
 	}
 }
 .menu-show {

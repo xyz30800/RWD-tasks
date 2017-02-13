@@ -184,11 +184,16 @@ input:focus {
   line-height: 92px;
   display: none; }
   .menu-btn i {
+    transition-duration: 0.8s;
     font-size: 40px; }
   @media (max-width: 414px) {
     .menu-btn {
       display: block;
       float: right; } }
+  .menu-btn i:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
 
 @media (max-width: 414px) {
   .menu-show {
